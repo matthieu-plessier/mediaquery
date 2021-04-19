@@ -1,0 +1,52 @@
+body, html {
+    height: 100%;
+}
+.background {
+    background-image: url(/assets/img/coworking-portrait.jpg);
+    height: 100%;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 300%;
+}
+.title {
+    justify-content: center;
+}
+.list {
+    background-color: yellowgreen;
+    list-style: none;
+} 
+.text1 {
+    background-color: tomato;
+}
+.text2 {
+    background-color: turquoise;
+}
+.colonne {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (orientation: landscape) {
+    .background {
+      background-image: url(/assets/img/coworking-paysage.jpg);
+    }
+  }
+@media (min-width: 1024px) {
+    .background {
+      height: 50%;
+    }
+    .colonne {
+        flex-direction: row;
+    }
+  } 
+
+@media (min-width: 576px) {
+      .list  {
+          font-weight: bold;
+          display: flex;
+          justify-content: space-around;
+
+      }
+    }
+
